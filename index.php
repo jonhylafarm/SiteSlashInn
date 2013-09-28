@@ -2,9 +2,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Slash Inn - Soluciones en TI</title>
+<title> &lt; Slash/Inn &gt; - Soluciones en TI</title>
 </head>
 
 <body>
+
 </body>
 </html>
