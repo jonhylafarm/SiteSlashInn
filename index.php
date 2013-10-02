@@ -11,7 +11,21 @@
 </head>
 
 <body>
-
+	<div class="container">
+    	<div class="row">
+        	<div class="col-md-12">&nbsp;</div>
+        	<div class="col-md-3"><a href="index.php" class="text-center"><img src="img/logo.png" width="90%"></a></div>
+            <div class="col-md-9">&nbsp;</div>
+            <div class="col-md-5 col-md-offset-4 text-right">
+            		<a class="btn btn-default">Inicio</a>
+                    <a class="btn btn-default">Portafolio</a>
+                    <a class="btn btn-default">Acerca</a>
+                    <a class="btn btn-default">Contacto</a>
+            </div>
+        </div>
+        <hr>
+        <hr style="margin-top:-10px;">
+    </div>
 	<script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
