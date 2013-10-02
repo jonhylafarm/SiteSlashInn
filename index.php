@@ -7,9 +7,12 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="img/favicon.ico">
 <title> &lt; Slash/Inn &gt; - Soluciones en TI</title>
+	<link href="css/bootstrap.css" rel="stylesheet">
 </head>
 
 <body>
 
+	<script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
