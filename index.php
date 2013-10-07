@@ -17,14 +17,14 @@
         	<div class="col-md-3"><a href="index.php" class="text-center"><img src="img/logo.png" width="100%"></a></div>
             <div class="col-md-9">&nbsp;</div>
             <div class="col-md-5 col-md-offset-4 text-center">
-            		<a class="btn btn-default">Inicio</a>
-                    <a class="btn btn-default">Portafolio</a>
-                    <a class="btn btn-default">Acerca</a>
-                    <a class="btn btn-default">Contacto</a>
+            		<a class="btn btn-default">Inicio</a>&nbsp;
+                    <a class="btn btn-default">Portafolio</a>&nbsp;
+                    <a class="btn btn-default">Nosotros</a>&nbsp;
+                    <a class="btn btn-default">Contacto</a>&nbsp;
             </div>
         </div>
         <hr>
-        <hr style="margin-top:-10px; color:#999;">
+        <hr style="margin-top:-10px;">
     </div>
 	<script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
