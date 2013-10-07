@@ -25,6 +25,15 @@
         </div>
         <hr>
         <hr style="margin-top:-10px;">
+        <div class="row">
+        </div>
+        <hr>
+        <div class="row">
+        	<div class="col-md-12" style="margin:-5px 0 10px 0;">
+        		<img src="img/twitter.png" height="40" width="40">&nbsp;&nbsp;
+                <img src="img/FB.png" height="40" width="40">
+            	<span class="pull-right" style=" margin-top:10px;">Slash Inn 2013 &copy;</span>
+        	</div>
     </div>
 	<script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
