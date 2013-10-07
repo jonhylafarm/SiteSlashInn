@@ -24,7 +24,7 @@
             </div>
         </div>
         <hr>
-        <hr style="margin-top:-10px;">
+        <hr style="margin-top:-10px; color:#999;">
     </div>
 	<script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
