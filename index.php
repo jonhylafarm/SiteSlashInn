@@ -40,6 +40,7 @@
                     <div class="cNube" style="margin:-50px 0 0 0;">Diseño</div>
                     <div class="cNube" style="margin:-40px 0 0 -35px;">Desarrollo</div>
                     <div class="cNube" style="margin:-55px 0 0 -15px; padding-top:50px; font-size:16px;">Administración y mantenimiento</div>
+                    <img src="img/slashinn.png" height="72" width="391">
             </div>
         </div>
         </div>
