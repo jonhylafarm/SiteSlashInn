@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="img/favicon.ico">
 <title> &lt; Slash/Inn &gt; - Soluciones en TI</title>
 	<link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet">
 </head>
 
 <body>
@@ -16,7 +17,13 @@
         	<div class="col-md-12">&nbsp;</div>
         	<div class="col-md-3"><a href="index.php" class="text-center"><img src="img/logo.png" width="100%"></a></div>
             <div class="col-md-9">&nbsp;</div>
-            <div class="col-md-5 col-md-offset-4 text-center">
+            <div class="col-md-5 col-md-offset-4 text-right visible-lg">
+            		<a class="btn btn-default">Inicio</a>&nbsp;
+                    <a class="btn btn-default">Portafolio</a>&nbsp;
+                    <a class="btn btn-default">Nosotros</a>&nbsp;
+                    <a class="btn btn-default">Contacto</a>&nbsp;
+            </div>
+            <div class="col-md-5 col-md-offset-4 text-center hidden-lg">
             		<a class="btn btn-default">Inicio</a>&nbsp;
                     <a class="btn btn-default">Portafolio</a>&nbsp;
                     <a class="btn btn-default">Nosotros</a>&nbsp;
@@ -26,6 +33,10 @@
         <hr>
         <hr style="margin-top:-10px;">
         <div class="row">
+        </div>
+        <div class="col-md-12">
+        	<div class="nube">
+            </div>
         </div>
         <hr>
         <div class="row">
