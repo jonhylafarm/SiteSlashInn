@@ -24,9 +24,36 @@
 	font-size:20px;
 }
 
-.cNube:hover{
+.cNube:hover, .cAct{
 	color:#000;
-	border:#CCC solid 2px;
 	z-index:+5;
 	cursor:pointer;
+}
+.cAct{
+	color:#000;
+	z-index:+3;
+	cursor:pointer;
+}
+.conte{
+	position:relative;
+	float:left;
+	width:400px;
+	margin:15px 0 0 600px;
+	font-size:18px;
+	display:none;
+}
+
+.contenido {
+	font-size:18px;
+	font-weight:bold;
+	text-align:justify;
+}
+
+.contenido li:hover {
+	cursor:pointer;
+}
+
+.descripcion{
+	font-size:16px;
+	display:none;
 }
