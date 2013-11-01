@@ -5,8 +5,6 @@
 	position:relative;
 	float:left;
 	width:450px;
-	margin:10px 0 0 -225px;
-	left:50%;
 }
 
 .cNube{
@@ -36,9 +34,8 @@
 }
 .conte{
 	position:relative;
-	float:left;
+	float:right;
 	width:400px;
-	margin:15px 0 0 600px;
 	font-size:18px;
 	display:none;
 }
@@ -56,4 +53,23 @@
 .descripcion{
 	font-size:16px;
 	display:none;
+}
+
+.cerrar {
+	position:relative;
+	float:right;
+	background:#FFF;
+	font-weight:bolder;
+	height:40px;
+	width:40px;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	padding-top:5px;
+	font-size:20px;
+	text-align:center;
+}
+
+.cerrar:hover{
+	cursor:pointer;
 }

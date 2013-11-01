@@ -54,7 +54,7 @@ return '';
                     <a class="btn btn-default">Nosotros</a>&nbsp;
                     <a class="btn btn-default">Contacto</a>&nbsp;
             </div>
-            <div class="col-md-5 col-md-offset-4 text-center hidden-lg">
+            <div class="col-md-5 col-md-offset-4 text-center hidden-lg hidden-md">
             		<a class="btn btn-default">Inicio</a>&nbsp;
                     <a class="btn btn-default">Portafolio</a>&nbsp;
                     <a class="btn btn-default">Nosotros</a>&nbsp;
@@ -66,6 +66,7 @@ return '';
         <div class="row visible-lg">
         <div class="col-md-12">
         	<div class="nube">
+            		
             		<div class="cNube" style="margin:0 0 0 65px;">Bienvenida</div>
                     <div class="cNube" style="margin:0 0 0 -25px;">Análisis</div>
                     <div class="cNube" style="margin:-50px 0 0 0;">Diseño</div>
@@ -75,8 +76,39 @@ return '';
                     <h4 class="text-center">/* Llevando tus requerimientos y adaptando tus necesidades al mundo moderno */</h4>
             </div>
             <div class="conte">
-            		<p align="center"><img src="img/nubehome.png" height="169" width="302"></p>
+            		<div class="cerrar"> X </div>
+            		<p align="center"><img src="img/nubehome.png" width="90%"></p>
             		<p align="justify">Dedicados a la Creación y Optimización de soluciones para su empresa o negocio, haciendo uso de Tecnologías de Información y desarrollando alternativas viables para el mejoramiento y adaptación a nuevas tecnologías.</p>
+            </div>
+            <div class="conte">
+            		<div class="cerrar"> X </div>
+            		<p align="center"><img src="img/nubeanalisis.png" width="90%"></p>
+            		<p align="justify">Estudio de ideas y objetivos para su empresa; haciendo uso de estructuras y modelos de construcción web.<br>
+Estudio sobre viabilidad de soluciones haciendo uso de herramientas estadísticas tomando en cuenta las necesidades y/o intereses de a quien va dirigida la solución.
+</p>
+            </div>
+            <div class="conte">
+            		<div class="cerrar"> X </div>
+            		<p align="center"><img src="img/nubediseno.png" width="90%"></p>
+            		<p align="justify">Creación de elementos visuales que sean atractivos y a la vez funcional para su sitio.<br>
+Estructuras estáticas y dinámicas, haciendo uso de elementos visuales adecuados para su empresa.<br>
+Personalización de sitios.<br>
+Retoque de logos, banners e imágenes emblemáticas de su empresa.
+</p>
+            </div>
+            <div class="conte">
+            		<div class="cerrar"> X </div>
+            		<p align="center"><img src="img/nubedesarrollo.png" width="90%"></p>
+            		<p align="justify">Ingeniería del Software para la creación o reestructuración de sitios, sistemas o soluciones.<br>
+Transformando sus ideas y solucionando sus necesidades en el mundo moderno estructurando  ideas y requerimientos.
+</p>
+            </div>
+            <div class="conte">
+            		<div class="cerrar"> X </div>
+            		<p align="center"><img src="img/nubeaym.png" width="90%"></p>
+            		<p align="justify">Constancia en el monitoreo de desarrollos, actualización de datos, cambios según requerimientos.<br>
+Brindando a nuestros clientes la capacidad de realizar cambios en sus sitios y a su vez brindándole nuestro apoyo para dudas o cambios.
+</p>
             </div>
         </div>
         </div>
@@ -91,16 +123,28 @@ return '';
 	<script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
-		
+		var ancho = $(document).width();
+		var mi;
+		if(ancho>1200){mi=375}
+		else { mi=(ancho-450)/2;}
+		$('.nube').css('margin-left',mi);
 		$( ".cNube" ).click(function() {
 			var x;
 			x=$(this).index();
-			$(".nube").animate({marginLeft:-400},2000);
-  			$( ".conte" ).delay(1000).fadeIn(2000);
+			$('.nube').animate({marginLeft:0},2000);
+  			$( '.conte:eq('+x+')').delay(1000).fadeIn(2000);
+			$('.conte:lt('+x+')').fadeOut(1000);
+			$('.conte:gt('+x+')').fadeOut(1000);
 			$('.cNube:eq('+x+')').addClass("cAct");
 			$('.cNube:lt('+x+')').removeClass("cAct");
 			$('.cNube:gt('+x+')').removeClass("cAct");
 		});
+		$('.cerrar').click(function(){
+			$('.conte').fadeOut(2000);
+			$('.nube').delay(1000).animate({marginLeft:mi},2000);
+			$('.cNube').removeClass("cAct");
+		}
+		)
 	</script>
 </body>
 </html>
