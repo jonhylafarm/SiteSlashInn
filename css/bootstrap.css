@@ -5456,7 +5456,7 @@ td.visible-xs {
     display: table-cell !important;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .visible-xs.visible-lg {
     display: block !important;
   }
@@ -5514,7 +5514,7 @@ td.visible-sm {
     display: table-cell !important;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .visible-sm.visible-lg {
     display: block !important;
   }
@@ -5572,7 +5572,7 @@ td.visible-md {
     display: table-cell !important;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .visible-md.visible-lg {
     display: block !important;
   }
@@ -5630,7 +5630,7 @@ td.visible-lg {
     display: table-cell !important;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .visible-lg {
     display: block !important;
   }
