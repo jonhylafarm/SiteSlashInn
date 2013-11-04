@@ -54,11 +54,29 @@ return '';
                     <a class="btn btn-default" href="nosotros.php">Nosotros</a>&nbsp;
                     <a class="btn btn-default" href="contacto.php">Contacto</a>&nbsp;
             </div>
-            <div class="col-md-5 col-md-offset-4 text-center hidden-lg hidden-md">
-            		<a class="btn btn-default">Inicio</a>&nbsp;
-                    <a class="btn btn-default">Portafolio</a>&nbsp;
-                    <a class="btn btn-default">Nosotros</a>&nbsp;
-                    <a class="btn btn-default">Contacto</a>&nbsp;
+            <div class="col-md-5 col-md-offset-4 text-center hidden-lg">
+            		<nav class="navbar navbar-default" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">Menú</a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+    	<li><a href="index.php">Inicio</a></li>
+        <li><a href="portafolio.php">Portafolio</a></li>
+        <li><a href="nosotros.php">Nosotros</a></li>
+        <li><a href="contacto.php">Contacto</a></li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</nav>          
             </div>
         </div>
         <hr>
@@ -112,6 +130,49 @@ Brindando a nuestros clientes la capacidad de realizar cambios en sus sitios y a
             </div>
         </div>
         </div>
+        <div class="row hidden-lg">
+        	<div class="col-md-1">&nbsp;</div>
+       		<div class="col-md-10">
+            		<div id="carousel" class="carousel slide" data-ride="carousel">
+  						<!-- Wrapper for slides -->
+  						<div class="carousel-inner">
+    					<div class="item active">
+      						<img src="img/nube1.png" alt="Slash Inn" width="100%">
+                            <div class="carousel-caption">Dedicados a la Creación y Optimización de soluciones para su empresa o negocio<spam class="hidden-xs">haciendo uso de Tecnologías de Información y desarrollando alternativas viables para el mejoramiento y adaptación a nuevas tecnologías.</spam></div>
+    					</div>
+    					<div class="item">
+      						<img src="img/nube2.png" alt="Slash Inn" width="100%">
+                            <div class="carousel-caption">Estudio de ideas y objetivos para su empresa; haciendo uso de estructuras y modelos de construcción web.<br>
+<spam class="hidden-xs">Estudio sobre viabilidad de soluciones haciendo uso de herramientas estadísticas tomando en cuenta las necesidades y/o intereses de a quien va dirigida la solución.</spam></div>
+    					</div>
+                        <div class="item">
+      						<img src="img/nube3.png" alt="Slash Inn" width="100%">
+                            <div class="carousel-caption">Creación de elementos visuales que sean atractivos y a la vez funcional para su sitio.<br><spam class="hidden-xs">
+Estructuras estáticas y dinámicas, haciendo uso de elementos visuales adecuados para su empresa.<br>
+Personalización de sitios.<br>
+Retoque de logos, banners e imágenes emblemáticas de su empresa.</spam></div>
+    					</div>
+                        <div class="item">
+      						<img src="img/nube4.png" alt="Slash Inn" width="100%">
+                            <div class="carousel-caption">Ingeniería del Software para la creación o reestructuración de sitios, sistemas o soluciones.<br><spam class="hidden-xs">
+Transformando sus ideas y solucionando sus necesidades en el mundo moderno estructurando  ideas y requerimientos.</spam></div>
+    					</div>
+                        <div class="item">
+      						<img src="img/nube5.png" alt="Slash Inn" width="100%">
+                            <div class="carousel-caption">Constancia en el monitoreo de desarrollos, actualización de datos, cambios según requerimientos.<br><spam class="hidden-xs">
+Brindando a nuestros clientes la capacidad de realizar cambios en sus sitios y a su vez brindándole nuestro apoyo para dudas o cambios.</spam></div>
+    					</div>
+  					</div>
+  					<!-- Controls -->
+  					<a class="left carousel-control" href="#carousel" data-slide="prev">
+    					<span class="glyphicon glyphicon-chevron-left"></span>
+  					</a>
+  					<a class="right carousel-control" href="#carousel" data-slide="next">
+    					<span class="glyphicon glyphicon-chevron-right"></span>
+  					</a>
+				</div>
+            </div>
+        </div>
         <hr>
         <div class="row">
         	<div class="col-md-12" style="margin:-5px 0 10px 0;">
@@ -145,6 +206,9 @@ Brindando a nuestros clientes la capacidad de realizar cambios en sus sitios y a
 			$('.cNube').removeClass("cAct");
 		}
 		)
+		$('#carousel').carousel({
+  			interval: 5500
+		})
 	</script>
 </body>
 </html>

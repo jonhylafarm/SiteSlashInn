@@ -14,20 +14,40 @@
 <body>
 	<div class="container">
     	<div class="row">
-        	<div class="col-sm-12">&nbsp;</div>
-        	<div class="col-sm-3"><a href="index.php" class="text-center"><img src="img/logo.png" width="100%"></a></div>
-            <div class="col-sm-9">&nbsp;</div>
-            <div class="col-sm-5 col-sm-offset-4 text-right visible-lg">
-            		<a class="btn btn-default">Inicio</a>&nbsp;
-                    <a class="btn btn-default">Portafolio</a>&nbsp;
-                    <a class="btn btn-default">Nosotros</a>&nbsp;
-                    <a class="btn btn-default">Contacto</a>&nbsp;
+        	<div class="col-md-12">&nbsp;</div>
+        	<?php echo ObtenerNavegador($_SERVER['HTTP_USER_AGENT']) ?>
+            <div class="col-md-3"><a href="index.php" class="text-center"><img src="img/logo.png" width="100%"></a></div>
+            <div class="col-md-9">&nbsp;</div>
+            <div class="col-md-5 col-md-offset-4 text-right visible-lg">
+            
+            		<a class="btn btn-default" href="index.php">Inicio</a>&nbsp;
+                    <a class="btn btn-default" href="portafolio.php">Portafolio</a>&nbsp;
+                    <a class="btn btn-default" href="nosotros.php">Nosotros</a>&nbsp;
+                    <a class="btn btn-default" href="contacto.php">Contacto</a>&nbsp;
             </div>
-            <div class="col-sm-5 col-sm-offset-4 text-center hidden-lg hidden-md">
-            		<a class="btn btn-default">Inicio</a>&nbsp;
-                    <a class="btn btn-default">Portafolio</a>&nbsp;
-                    <a class="btn btn-default">Nosotros</a>&nbsp;
-                    <a class="btn btn-default">Contacto</a>&nbsp;
+            <div class="col-md-5 col-md-offset-4 text-center hidden-lg">
+            		<nav class="navbar navbar-default" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">Menú</a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+    	<li><a href="index.php">Inicio</a></li>
+        <li><a href="portafolio.php">Portafolio</a></li>
+        <li><a href="nosotros.php">Nosotros</a></li>
+        <li><a href="contacto.php">Contacto</a></li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</nav>          
             </div>
         </div>
         <hr>

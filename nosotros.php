@@ -1,5 +1,29 @@
 <!doctype html>
 <html>
+<?php
+function ObtenerNavegador($user_agent) {
+     $navegadores = array(
+          'Internet Explorer 8' => '(MSIE 8\.[0-9]+)',
+          'Internet Explorer 7' => '(MSIE 7\.[0-9]+)',
+          'Internet Explorer 6' => '(MSIE 6\.[0-9]+)',
+          'Internet Explorer 5' => '(MSIE 5\.[0-9]+)',
+          'Internet Explorer 4' => '(MSIE 4\.[0-9]+)',
+);
+foreach($navegadores as $navegador=>$pattern){
+       if (eregi($pattern, $user_agent))
+       
+	   return 'Este sitio Funciona mejor en Exploradores mâs recientes, Opciones:
+	   <html> 
+	   <a href="https://www.google.com/intl/es/chrome/browser/?hl=es"> Chrome </a>
+	   <a href="http://www.mozilla.org/es-MX/firefox/new/"> FireFox </a>
+	   <a href="http://windows.microsoft.com/es-es/internet-explorer/download-ie"> Internet Explorer </a>
+	   
+	   </html>
+	    ';
+    }
+return '';
+}
+?>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,19 +39,39 @@
 	<div class="container">
     	<div class="row">
         	<div class="col-md-12">&nbsp;</div>
-        	<div class="col-md-3"><a href="index.php" class="text-center"><img src="img/logo.png" width="100%"></a></div>
+        	<?php echo ObtenerNavegador($_SERVER['HTTP_USER_AGENT']) ?>
+            <div class="col-md-3"><a href="index.php" class="text-center"><img src="img/logo.png" width="100%"></a></div>
             <div class="col-md-9">&nbsp;</div>
             <div class="col-md-5 col-md-offset-4 text-right visible-lg">
-            		<a class="btn btn-default">Inicio</a>&nbsp;
-                    <a class="btn btn-default">Portafolio</a>&nbsp;
-                    <a class="btn btn-default">Nosotros</a>&nbsp;
-                    <a class="btn btn-default">Contacto</a>&nbsp;
+            
+            		<a class="btn btn-default" href="index.php">Inicio</a>&nbsp;
+                    <a class="btn btn-default" href="portafolio.php">Portafolio</a>&nbsp;
+                    <a class="btn btn-default" href="nosotros.php">Nosotros</a>&nbsp;
+                    <a class="btn btn-default" href="contacto.php">Contacto</a>&nbsp;
             </div>
             <div class="col-md-5 col-md-offset-4 text-center hidden-lg">
-            		<a class="btn btn-default" style="margin-top:3px;">Inicio</a>&nbsp;
-                    <a class="btn btn-default" style="margin-top:3px;">Portafolio</a>&nbsp;
-                    <a class="btn btn-default" style="margin-top:3px;">Nosotros</a>&nbsp;
-                    <a class="btn btn-default" style="margin-top:3px;">Contacto</a>&nbsp;
+            		<nav class="navbar navbar-default" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">Menú</a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+    	<li><a href="index.php">Inicio</a></li>
+        <li><a href="portafolio.php">Portafolio</a></li>
+        <li><a href="nosotros.php">Nosotros</a></li>
+        <li><a href="contacto.php">Contacto</a></li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</nav>          
             </div>
         </div>
         <hr>
