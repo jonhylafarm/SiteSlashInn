@@ -49,10 +49,10 @@ return '';
             <div class="col-md-9">&nbsp;</div>
             <div class="col-md-5 col-md-offset-4 text-right visible-lg">
             
-            		<a class="btn btn-default">Inicio</a>&nbsp;
-                    <a class="btn btn-default">Portafolio</a>&nbsp;
-                    <a class="btn btn-default">Nosotros</a>&nbsp;
-                    <a class="btn btn-default">Contacto</a>&nbsp;
+            		<a class="btn btn-default" href="index.php">Inicio</a>&nbsp;
+                    <a class="btn btn-default" href="portafolio.php">Portafolio</a>&nbsp;
+                    <a class="btn btn-default" href="nosotros.php">Nosotros</a>&nbsp;
+                    <a class="btn btn-default" href="contacto.php">Contacto</a>&nbsp;
             </div>
             <div class="col-md-5 col-md-offset-4 text-center hidden-lg hidden-md">
             		<a class="btn btn-default">Inicio</a>&nbsp;
