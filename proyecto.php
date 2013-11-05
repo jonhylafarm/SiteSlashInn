@@ -86,7 +86,7 @@ return '';
         <p align="justify">DESARROLLO TECNICO EN CONTROL Y AUTOMATIZACION INDUSTRIAL, S.A. DE C.V.<br><br>
 
 Es una Empresa dedicada a la distribución de marcas como Altech, Autonics, Carlo Gavazzy, Omron, Baumer, SAB Kabel, DETEC es importadora de Equipos de Control y de Automatización, de cualquier marca a nivel mundial, desde hace 9 años, está situada en la ciudad de Toluca, Estado de México.</p>
-			<button class="btn btn-default btn-group-justified">Visitar</button>
+			<a href="http://detec-altech.com/" class="btn btn-default btn-group-justified" target="_blank">Visitar</a>
         </div>
         <div class="col-sm-12 visible-xs">&nbsp;</div>
         <div class="col-sm-8">
