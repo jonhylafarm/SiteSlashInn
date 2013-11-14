@@ -13,20 +13,18 @@
 <div class="row">
 <div class="col-md-4">&nbsp;</div>
 <div class="col-md-4">
-<?
+<?php
 
 if ($_POST['subirBtn']) {
-	echo"Entro<br>";
 $nombre_archivo = $_FILES['imagen']['name']; 
 $tipo_archivo = $_FILES['imagen']['type']; 
 $tamano_archivo = $_FILES['imagen']['size']; 
-echo "$nombre_archivo $tamano_archivo $tipo_archivo";
-//compruebo si las características del archivo son las que deseo 
-if (!((strpos($tipo_archivo, "gif") || strpos($tipo_archivo, "jpeg") || strpos($tipo_archivo, "png")) && ($tamano_archivo < 100000))) { 
+if(file_exists("../idp/$nombre_archivo")){ echo "El archivo ya existe";} 
+else if (!((strpos($tipo_archivo, "gif") || strpos($tipo_archivo, "jpeg") || strpos($tipo_archivo, "png")) && ($tamano_archivo < 100000))) { 
    	echo "La extensión o el tamaño de los archivos no es correcta. <br><br><table><tr><td><li>Se permiten archivos .gif o .jpg<br><li>se permiten archivos de 100 Kb máximo.</td></tr></table>"; 
 }else{ 
    	if (move_uploaded_file($_FILES['imagen']['tmp_name'], "../idp/$nombre_archivo")){ 
-      	 echo "El archivo ha sido cargado correctamente."; 
+      	 echo "El archivo ha sido cargado correctamente, nombre: <b>$nombre_archivo</b>"; 
    	}else{ 
       	 echo "Ocurrió algún error al subir el fichero. No pudo guardarse."; 
    	} 
